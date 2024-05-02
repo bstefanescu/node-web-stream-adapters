@@ -1,4 +1,4 @@
-# node-readable-stream
+# node-web-stream-adapters
 
 Utilities to convert Node.js Readable ans Writable streams to web ReadableStream and WritableStream streams.
 

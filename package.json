@@ -1,0 +1,51 @@
+{
+    "name": "node-readable-stream",
+    "version": "0.1.0",
+    "type": "module",
+    "description": "Redable to ReadableStream for Node.js",
+    "types": "./lib/types/index.d.ts",
+    "files": [
+        "lib",
+        "src"
+    ],
+    "scripts": {
+        "eslint": "eslint './src/**/*.{jsx,js,tsx,ts}'",
+        "build": "tsmod build",
+        "clean": "rimraf ./node_modules ./lib ./tsconfig.tsbuildinfo",
+        "test": "vitest run"
+    },
+    "author": "Bogdan Stefanescu <stefanescu.bogdan@gmail.com>",
+    "license": "MIT",
+    "homepage": "https://github.com/bstefanescu/node-readable-stream#readme",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/bstefanescu/node-readable-stream"
+    },
+    "bugs": {
+        "url": "https://github.com/bstefanescu/node-readable-stream/issues",
+        "email": "stefanescu.bogdan@gmail.com"
+    },
+    "keywords": [
+        "ReadableStream",
+        "stream",
+        "Readable",
+        "node",
+        "web",
+        "convert"
+    ],
+    "devDependencies": {
+        "@types/node": "^20.8.9",
+        "rimraf": "^5.0.5",
+        "ts-dual-module": "^0.6.3",
+        "typescript": "^5.0.2",
+        "vitest": "^1.4.0"
+    },
+    "ts_dual_module": {
+        "outDir": "lib"
+    },
+    "exports": {
+        "types": "./lib/types/index.d.ts",
+        "import": "./lib/esm/index.js",
+        "require": "./lib/cjs/index.js"
+    }
+}

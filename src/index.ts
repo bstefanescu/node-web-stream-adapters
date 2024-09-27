@@ -1,1 +1,2 @@
-export * from "./readable.js";
+export * from "./readableToWebStream.js";
+export * from "./webStreamToReadable.js"

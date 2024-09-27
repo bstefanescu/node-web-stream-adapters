@@ -55,3 +55,20 @@ export function createReadableStreamFromBuffer(value: Buffer): ReadableStream<Bu
 export function createReadableStreamFromReadable(stream: Readable): ReadableStream<string | Buffer> {
     return createReadableStreamFromAsyncIterable(stream);
 }
+
+// shorter names
+const asyncIterableToWebStream = createReadableStreamFromAsyncIterable;
+const iterableToWebStream = createReadableStreamFromIterable;
+const iteratorToWebStream = createReadableStreamFromIterator
+const stringToWebStream = createReadableStreamFromString;
+const bufferToWebStream = createReadableStreamFromBuffer;
+const readableToWebStream = createReadableStreamFromReadable;
+
+export {
+    asyncIterableToWebStream,
+    iterableToWebStream,
+    iteratorToWebStream,
+    stringToWebStream,
+    bufferToWebStream,
+    readableToWebStream
+}

@@ -1,8 +1,8 @@
 {
-    "name": "node-readable-stream",
-    "version": "0.1.0",
+    "name": "node-web-stream-adapters",
+    "version": "0.2.0",
     "type": "module",
-    "description": "Redable to ReadableStream for Node.js",
+    "description": "Node adapters for web streams",
     "types": "./lib/types/index.d.ts",
     "files": [
         "lib",
@@ -27,11 +27,13 @@
     },
     "keywords": [
         "ReadableStream",
+        "WritableStream",
         "stream",
         "Readable",
+        "Writable",
         "node",
         "web",
-        "convert"
+        "adapter"
     ],
     "devDependencies": {
         "@types/node": "^20.8.9",

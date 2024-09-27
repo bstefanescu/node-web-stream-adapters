@@ -1,6 +1,6 @@
 {
     "name": "node-web-stream-adapters",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "type": "module",
     "description": "Node adapters for web streams",
     "types": "./lib/types/index.d.ts",
